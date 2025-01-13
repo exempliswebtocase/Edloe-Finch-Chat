@@ -8,7 +8,6 @@
 	}
 </style>
 
-<img src="https://exemplis--partial--c.sandbox.vf.force.com/resource/1731444537000/LogoEdloeFinch" width = "250" height = "100">
 <h1>Welcome to Our Support Chat</h1>
     <p>If you need assistance, click the chat button below to connect with one of our agents.</p>
 
@@ -37,17 +36,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://exemplis--partial.sandbox.my.salesforce.com',
-			'https://exemplis--partial.sandbox.my.salesforce-sites.com/liveagent',
+			'https://exemplis--vtstdeploy.sandbox.my.salesforce.com',
+			'https://exemplis--vtstdeploy.sandbox.my.salesforce-sites.com/liveagent',
 			gslbBaseURL,
-			'00Ddy000000GnET',
+			'00Ddy0000016M5J',
 			'Edloe_Finch_Chat',
 			{
 				baseLiveAgentContentURL: 'https://c.la12s-core1.sfdc-yfeipo.salesforceliveagent.com/content',
-				deploymentId: '572dy0000006TKH',
-				buttonId: '573dy0000001dH3',
+				deploymentId: '5725A000000AyiA',
+				buttonId: '573dy00000025Rq',
 				baseLiveAgentURL: 'https://d.la12s-core1.sfdc-yfeipo.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Edloe_Finch_Chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04Idy0000001iAIEAY_1946118ff52',
 				isOfflineSupportEnabled: true
 			}
 		);
@@ -55,7 +54,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://exemplis--partial.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://exemplis--vtstdeploy.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
