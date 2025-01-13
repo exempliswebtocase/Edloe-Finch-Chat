@@ -8,16 +8,13 @@
 	}
 </style>
 
-<h1>Welcome to Our Support Chat</h1>
-    <p>If you need assistance, click the chat button below to connect with one of our agents.</p>
-
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-		embedded_svc.settings.defaultMinimizedText = 'Chat Now'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
@@ -30,23 +27,23 @@
 		//};
 		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-		embedded_svc.settings.offlineSupportMinimizedText = 'Leave A Message'; //(Defaults to Contact Us)
+		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://exemplis--vtstdeploy.sandbox.my.salesforce.com',
-			'https://exemplis--vtstdeploy.sandbox.my.salesforce-sites.com/liveagent',
+			'https://exemplis--partial.sandbox.my.salesforce.com',
+			'https://exemplis--partial.sandbox.my.salesforce-sites.com/liveagent',
 			gslbBaseURL,
-			'00Ddy0000016M5J',
+			'00Ddy000000GnET',
 			'Edloe_Finch_Chat',
 			{
 				baseLiveAgentContentURL: 'https://c.la12s-core1.sfdc-yfeipo.salesforceliveagent.com/content',
-				deploymentId: '572dy0000008OwP',
-				buttonId: '573dy00000025Rq',
+				deploymentId: '572dy0000006TKH',
+				buttonId: '573dy0000001dH3',
 				baseLiveAgentURL: 'https://d.la12s-core1.sfdc-yfeipo.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04Idy0000001iAIEAY_1946118ff52',
+				eswLiveAgentDevName: 'Edloe_Finch_Chat',
 				isOfflineSupportEnabled: true
 			}
 		);
@@ -54,7 +51,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://exemplis--vtstdeploy.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://exemplis--partial.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
